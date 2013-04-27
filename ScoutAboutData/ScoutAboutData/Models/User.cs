@@ -14,9 +14,9 @@ namespace ScoutAboutData
     /// </summary>
     public class User
     {
-        public int UserId;
+        public int UserId { get; set; }
 
         [Required]
-        public string Name;
+        public string Name { get; set; }
     }
 }
