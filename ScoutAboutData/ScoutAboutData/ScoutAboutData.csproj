@@ -47,8 +47,8 @@
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\ScoutAboutDataContext.cs" />
     <Compile Include="User.cs" />
-    <Compile Include="Activitiy.cs" />
-    <Compile Include="Guide.cs" />
+    <Compile Include="Models\Activitiy.cs" />
+    <Compile Include="Models\Guide.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

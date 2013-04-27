@@ -18,7 +18,7 @@ namespace ScoutAboutData
         public TimeSpan Duration { get; set; }
         public DateTimeOffset StartTime { get; set; }
         public DateTimeOffset EndTime {get;set;}
-        public List<Tag> Tags { get; set; }            
+        public virtual ICollection<Tag> Tags { get; set; }            
 
     }
 }

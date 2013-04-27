@@ -10,7 +10,7 @@ namespace ScoutAboutData
 {
     public class Guide
     {
-        public List<Activity> Activities { get; set; }
+        public virtual ICollection<Activity> Activities { get; set; }
         [Required]
         public string Title { get; set; }
         public string Summary { get; set; }
