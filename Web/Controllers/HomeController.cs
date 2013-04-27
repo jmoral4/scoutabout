@@ -17,14 +17,15 @@ namespace Web.Controllers
     }
 
 
-    public ActionResult GuidesByCity(string City)
+    public ActionResult GuidesByCity(string SelectedCity)
     {
-        IEnumerable<Guide> guides = SearchForGuidesBy(City);
+        IEnumerable<Guide> guides = SearchForGuidesBy(SelectedCity);
         return View(guides);
     }
 
     private IEnumerable<Guide> SearchForGuidesBy(string City)
     {
+       
         return new List<Guide>().DefaultIfEmpty();
     }
 

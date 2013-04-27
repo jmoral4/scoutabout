@@ -1,10 +1,11 @@
 ﻿
-@using (Html.BeginForm("Search", "Home", FormMethod.Post, new { @class="example"})) {
+@using (Html.BeginForm("GuidesByCity", "Home",FormMethod.Get))
+{
     
     
         @Html.Label("I'm going to ")
     
-        @Html.DropDownList("Cities", new SelectList( new List<string>() { "Baltimore", "Portland", "Washington" }));
+        @Html.DropDownList("SelectedCity", new SelectList( new List<string>() { "Baltimore", "Portland", "Washington" }));
     
         @Html.Label(" whats can I do for fun!");
 
