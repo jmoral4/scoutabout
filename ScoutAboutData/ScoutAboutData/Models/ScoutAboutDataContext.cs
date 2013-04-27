@@ -17,6 +17,6 @@ namespace ScoutAboutData.Models
         // 
         // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<ScoutAboutData.Models.ScoutAboutDataContext>());
 
-        public DbSet<ScoutAboutData.User> Users { get; set; }
+        public DbSet<ScoutAboutData.Models.User> Users { get; set; }
     }
 }

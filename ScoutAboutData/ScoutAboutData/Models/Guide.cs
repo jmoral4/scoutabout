@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModeng System.ComponentModel.DataAnnotations;
 
-namespace ScoutAboutData.Models
+namespace SActivitiytData.Models
 {
     public class Guide
     {

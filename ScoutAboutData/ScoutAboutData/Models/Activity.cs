@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ScoutAboutData.Models
+namespaActivitiyAboutData.Models
 {
     public class Activity
     {
