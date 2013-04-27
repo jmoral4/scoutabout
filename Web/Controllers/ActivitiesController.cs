@@ -18,7 +18,7 @@ namespace Web.Controllers
 
         public ViewResult Index()
         {
-            return View(context.Activities.Include(activity => activity.Tags).Include(activity => activity.Interests).ToList());
+            return View(context.Activities.Include(activity => activity.Tags).ToList());
         }
 
         //

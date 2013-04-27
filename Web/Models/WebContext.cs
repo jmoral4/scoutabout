@@ -15,7 +15,7 @@ namespace Web.Models
         // code to the Application_Start method in your Global.asax file.
         // Note: this will destroy and re-create your database with every model change.
         // 
-        // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<Web.Models.WebContext>());
+       
 
         public DbSet<Web.Models.User> Users { get; set; }
 
