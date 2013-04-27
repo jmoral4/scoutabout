@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ScoutAboutData
+namespace ScoutAboutData.Models
 {
     public class Activity
     {
+        public int ActivityId { get; set; }
         [Required]
         public string Title { get; set; }
         public string PlaceName { get; set; }

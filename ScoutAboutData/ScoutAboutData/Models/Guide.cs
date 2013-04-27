@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace ScoutAboutData
+namespace ScoutAboutData.Models
 {
     public class Guide
     {
+        public int GuideId { get; set; }
         public virtual ICollection<Activity> Activities { get; set; }
         [Required]
         public string Title { get; set; }
