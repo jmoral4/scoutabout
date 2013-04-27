@@ -7,7 +7,7 @@ using Web.Models;
 
 namespace Web.Controllers
 {
-  public class HomeController : Controller
+  public class HomeController : BootstrapBaseController
   {
     public ActionResult Index()
     {

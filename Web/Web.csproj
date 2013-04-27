@@ -70,6 +70,9 @@
       <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Mvc">
+      <HintPath>..\packages\Mvc4Futures.4.0.20710.0\lib\net40\Microsoft.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -167,8 +170,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="BootstrapSupport\ControlGroupExtensions.cs" />
+    <Compile Include="BootstrapSupport\HtmlHelpers\GlyphIcons.cs" />
+    <Compile Include="BootstrapSupport\HtmlHelpers\Paging.cs" />
+    <Compile Include="BootstrapSupport\ViewHelperExtensions.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ActivitiesController.cs" />
+    <Compile Include="Controllers\BootstrapBaseController.cs" />
     <Compile Include="Controllers\GuidesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InterestsController.cs" />
@@ -190,6 +198,11 @@
     <Compile Include="Models\TypeOfDay.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\WebContext.cs" />
+    <Compile Include="NavigationRoutes\INavigationRouteFilter.cs" />
+    <Compile Include="NavigationRoutes\NamedRoute.cs" />
+    <Compile Include="NavigationRoutes\NavigationExtensions.cs" />
+    <Compile Include="NavigationRoutes\NavigationRouteConfigurationExtensions.cs" />
+    <Compile Include="NavigationRoutes\NavigationRouteFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -361,6 +374,10 @@
     <Content Include="Views\Items\Index.cshtml" />
     <Content Include="Views\Items\_CreateOrEdit.cshtml" />
     <Content Include="Views\Home\GuidesByCity.cshtml" />
+    <Content Include="Views\Shared\_alerts.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Shared\_validationSummary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
