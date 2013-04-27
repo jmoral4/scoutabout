@@ -12,6 +12,7 @@ namespace ScoutAboutData.Models
         public int ActivityId { get; set; }
         [Required]
         public string Title { get; set; }
+        [Required]
         public string PlaceName { get; set; }
         public double Lat { get; set; }
         public double Long { get; set; }
