@@ -14,6 +14,8 @@ namespace Web.Models
         public string Title { get; set; }
         [Required]
         public string PlaceName { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
         public double Lat { get; set; }
         public double Long { get; set; }
         public decimal Cost { get; set; }
@@ -21,7 +23,5 @@ namespace Web.Models
         public DateTimeOffset StartTime { get; set; }
         public DateTimeOffset EndTime {get;set;}
         public virtual ICollection<Tag> Tags { get; set; }
-        public virtual ICollection<Interest> Interests { get; set; }   
-
     }
 }

@@ -1,0 +1,95 @@
+@model IEnumerable<Web.Models.Activity>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Title
+        </th>
+        <th>
+            PlaceName
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            State
+        </th>
+        <th>
+            Lat
+        </th>
+        <th>
+            Long
+        </th>
+        <th>
+            Cost
+        </th>
+        <th>
+            Duration
+        </th>
+        <th>
+            StartTime
+        </th>
+        <th>
+            EndTime
+        </th>
+        <th>
+            Tags
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ActivityId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ActivityId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ActivityId })
+        </td>
+        <td>
+			@item.Title
+        </td>
+        <td>
+			@item.PlaceName
+        </td>
+        <td>
+			@item.City
+        </td>
+        <td>
+			@item.State
+        </td>
+        <td>
+			@String.Format("{0:F}", item.Lat)
+        </td>
+        <td>
+			@String.Format("{0:F}", item.Long)
+        </td>
+        <td>
+			@String.Format("{0:F}", item.Cost)
+        </td>
+        <td>
+			@item.Duration
+        </td>
+        <td>
+			@item.StartTime
+        </td>
+        <td>
+			@item.EndTime
+        </td>
+        <td>
+			@(item.Tags == null ? "None" : item.Tags.Count.ToString())
+        </td>
+    </tr>
+}
+
+</table>
+
+

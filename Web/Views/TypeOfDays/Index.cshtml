@@ -1,0 +1,47 @@
+@model IEnumerable<Web.Models.TypeOfDay>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Name
+        </th>
+        <th>
+            RelatedInterests
+        </th>
+        <th>
+            RelatedTags
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TypeOfDayId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TypeOfDayId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TypeOfDayId })
+        </td>
+        <td>
+			@item.Name
+        </td>
+        <td>
+			@(item.RelatedInterests == null ? "None" : item.RelatedInterests.Count.ToString())
+        </td>
+        <td>
+			@(item.RelatedTags == null ? "None" : item.RelatedTags.Count.ToString())
+        </td>
+    </tr>
+}
+
+</table>
+
+

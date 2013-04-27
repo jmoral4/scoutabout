@@ -1,0 +1,50 @@
+@model Web.Models.Activity
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Activity</legend>
+
+    <div class="display-label">Title</div>
+    <div class="display-field">@Model.Title</div>
+
+    <div class="display-label">PlaceName</div>
+    <div class="display-field">@Model.PlaceName</div>
+
+    <div class="display-label">City</div>
+    <div class="display-field">@Model.City</div>
+
+    <div class="display-label">State</div>
+    <div class="display-field">@Model.State</div>
+
+    <div class="display-label">Lat</div>
+    <div class="display-field">@String.Format("{0:F}", Model.Lat)</div>
+
+    <div class="display-label">Long</div>
+    <div class="display-field">@String.Format("{0:F}", Model.Long)</div>
+
+    <div class="display-label">Cost</div>
+    <div class="display-field">@String.Format("{0:F}", Model.Cost)</div>
+
+    <div class="display-label">Duration</div>
+    <div class="display-field">@Model.Duration</div>
+
+    <div class="display-label">StartTime</div>
+    <div class="display-field">@Model.StartTime</div>
+
+    <div class="display-label">EndTime</div>
+    <div class="display-field">@Model.EndTime</div>
+
+    <div class="display-label">Tags</div>
+    <div class="display-field">@(Model.Tags == null ? "None" : Model.Tags.Count.ToString())</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ActivityId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

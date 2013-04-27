@@ -1,0 +1,28 @@
+@model Web.Models.Guide
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Title)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Title)
+    @Html.ValidationMessageFor(model => model.Title)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Summary)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Summary)
+    @Html.ValidationMessageFor(model => model.Summary)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Author)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Author)
+    @Html.ValidationMessageFor(model => model.Author)
+</div>
+

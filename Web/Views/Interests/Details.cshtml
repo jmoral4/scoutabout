@@ -1,0 +1,23 @@
+@model Web.Models.Interest
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Interest</legend>
+
+    <div class="display-label">RelatedTags</div>
+    <div class="display-field">@(Model.RelatedTags == null ? "None" : Model.RelatedTags.Count.ToString())</div>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.InterestId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

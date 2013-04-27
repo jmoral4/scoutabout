@@ -18,5 +18,17 @@ namespace Web.Models
         // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<Web.Models.WebContext>());
 
         public DbSet<Web.Models.User> Users { get; set; }
+
+        public DbSet<Web.Models.Activity> Activities { get; set; }
+
+        public DbSet<Web.Models.Guide> Guides { get; set; }
+
+        public DbSet<Web.Models.Tag> Tags { get; set; }
+
+        public DbSet<Web.Models.TypeOfDay> TypeOfDays { get; set; }
+
+        public DbSet<Web.Models.Interest> Interests { get; set; }
+
+        public DbSet<Web.Models.Item> Items { get; set; }
     }
 }

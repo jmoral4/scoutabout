@@ -1,0 +1,53 @@
+@model IEnumerable<Web.Models.Guide>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Activities
+        </th>
+        <th>
+            Title
+        </th>
+        <th>
+            Summary
+        </th>
+        <th>
+            Author
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.GuideId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.GuideId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.GuideId })
+        </td>
+        <td>
+			@(item.Activities == null ? "None" : item.Activities.Count.ToString())
+        </td>
+        <td>
+			@item.Title
+        </td>
+        <td>
+			@item.Summary
+        </td>
+        <td>
+			@item.Author
+        </td>
+    </tr>
+}
+
+</table>
+
+

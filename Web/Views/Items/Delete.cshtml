@@ -1,0 +1,26 @@
+@model Web.Models.Item
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Item</legend>
+
+    <div class="display-label">ImageUrl</div>
+    <div class="display-field">@Model.ImageUrl</div>
+
+    <div class="display-label">WebUrl</div>
+    <div class="display-field">@Model.WebUrl</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

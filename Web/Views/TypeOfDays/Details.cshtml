@@ -1,0 +1,26 @@
+@model Web.Models.TypeOfDay
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>TypeOfDay</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">RelatedInterests</div>
+    <div class="display-field">@(Model.RelatedInterests == null ? "None" : Model.RelatedInterests.Count.ToString())</div>
+
+    <div class="display-label">RelatedTags</div>
+    <div class="display-field">@(Model.RelatedTags == null ? "None" : Model.RelatedTags.Count.ToString())</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.TypeOfDayId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+
