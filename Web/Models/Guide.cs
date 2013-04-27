@@ -16,8 +16,10 @@ namespace Web.Models
         [Required]
         public string Title { get; set; }
         public string Summary { get; set; }
-        [Required]
-        [ForeignKey("UserId")]
+
+        public int AuthorId { get; set; }
+
+        [ForeignKey("AuthorId")]
         public User Author { get; set; }
 
     }
