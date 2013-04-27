@@ -256,8 +256,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <None Include="Properties\PublishProfiles\Scoutabout - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Scoutabout - FTP %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\Scoutabout - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\Scoutabout - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\Scoutabout - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
