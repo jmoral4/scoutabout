@@ -20,7 +20,8 @@ namespaActivitiyAboutData.Models
         public TimeSpan Duration { get; set; }
         public DateTimeOffset StartTime { get; set; }
         public DateTimeOffset EndTime {get;set;}
-        public virtual ICollection<Tag> Tags { get; set; }            
+        public virtual ICollection<Tag> Tags { get; set; }
+        public virtual ICollection<Interest> Interests { get; set; }   
 
     }
 }
