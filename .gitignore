@@ -62,3 +62,6 @@ packages/
 
 #Test files
 *.testsettings
+
+# Erik: Whitelisted special files
+!ScoutAboutData/Bin/Debug/EntityFramework.dll
