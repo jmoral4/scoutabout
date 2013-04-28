@@ -17,7 +17,7 @@
     while(MockModels.Count < 12)
     {
         Web.Models.Guide g = new Web.Models.Guide();
-        g.ImageUrl = guideUrls[r.Next(0,4)];
+        g.ImageUrl = guideUrls[r.Next(0,3)];
         g.Author = author;
         g.Follow = 1;
         g.Views = r.Next(1, 10000);
