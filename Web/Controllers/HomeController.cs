@@ -10,8 +10,6 @@ namespace Web.Controllers
   public class HomeController : BootstrapBaseController
   {
 
-      
-
     public ActionResult Index()
     {
       ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
@@ -19,18 +17,32 @@ namespace Web.Controllers
       return View( ComboBoxItems.Cities );
     }
 
-
-    public ActionResult GuidesByCity(string SelectedCity)
+    public ActionResult BestDays()
     {
-       
-        IEnumerable<Guide> guides = SearchForGuidesBy(SelectedCity);
-        return View(guides);
+      ViewBag.Message = "Best days.";
+
+      return View();
     }
 
-    private IEnumerable<Guide> SearchForGuidesBy(string City)
+    public ActionResult Cities()
     {
-         
-        return new List<Guide>().DefaultIfEmpty();
+      ViewBag.Message = "Cities.";
+
+      return View();
+    }
+
+    public ActionResult TopLocal()
+    {
+      ViewBag.Message = "Top Local.";
+
+      return View();
+    }
+
+    public ActionResult MyGuides()
+    {
+      ViewBag.Message = "My Guides.";
+
+      return View();
     }
 
     public ActionResult About()
