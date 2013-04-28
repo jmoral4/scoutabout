@@ -110,5 +110,16 @@ namespace Web.Controllers
             }
             base.Dispose(disposing);
         }
+
+        // Custom Actions
+        
+        public ViewResult Description(int id)
+        {
+            Guide guide = context.Guides.Where(g => g.GuideId == id).FirstOrDefault();
+            if (guide == null)
+                RedirectToAction("index");
+
+        	return View(guide);
+        }
     }
 }

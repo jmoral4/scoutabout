@@ -1,0 +1,30 @@
+@model Web.Models.Guide
+
+@{
+    ViewBag.Title = "description";
+}
+
+<div class="guide-header row">
+    <div class="span6">
+        <h2>BEST DAY DETAIL</h2>
+    </div>
+    <div class="span6">
+         <span class="">Find out all the gritty details about the Best Day you selected.
+    </span>
+    </div>
+   
+</div>
+<div class="guide-details row">
+    <div class="span5">
+        <h3>@Model.Title</h3>
+        <p>
+            @Model.Summary
+        </p>
+        <ul class="social-list">
+            <li>Views: @Model</li>
+
+        </ul>
+    </div>
+    <div class="span7">
+    </div>
+</div>

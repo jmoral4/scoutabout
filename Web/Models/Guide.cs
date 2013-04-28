@@ -17,9 +17,11 @@ namespace Web.Models
         public string Title { get; set; }
         public string Summary { get; set; }
 
+        public string ImageUrl {get;set;}
+
         public int? Likes { get; set; }
         public int? Follow { get; set; }
-        public int? Shares { get; set; }
+        public int? Views { get; set; }
 
         public int AuthorId { get; set; }
 
