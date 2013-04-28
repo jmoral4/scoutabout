@@ -47,7 +47,7 @@
       @Html.Partial("_validationSummary")
 
       @RenderBody()
-      <hr style="padding-left: 20px; padding-right: 20px">
+      <hr style="padding-left: 20px; padding-right: 20px; margin-bottom: 0">
       <footer>
         <div style="float: right; margin: 5px">
           <div>
@@ -58,8 +58,6 @@
           <div class="fb-like" data-href="https://www.facebook.com/ScoutaboutUsa" data-layout="button_count" data-show-faces="false" data-width="450"></div>
         </div>
         <div style="float: left; color: white; padding-left: 15px;">
-          <div>@Html.ActionLink("Blog", "Contact", "Home", routeValues: null, htmlAttributes: new { id = "teamLink", style="color:white;" })</div>
-          <div>@Html.ActionLink("Team", "About", "Home", routeValues: null, htmlAttributes: new { id = "teamLink", style="color:white;" })</div>
         </div>
         <center>
           <p class="textLabel">&copy; North Technologies, LLC @System.DateTime.Now.ToString("yyyy")</p>
