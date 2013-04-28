@@ -9,50 +9,86 @@
     .CapHeader
     {
         font-family:'Quicksand',Verdana;
-        font-size:25px;
+        font-size:40px;
+        color:white;
         text-transform:uppercase;
         float:left;
+        padding:10px;
+    }
+    .SearchBtn
+    {
+    border:1px solid white;
+     font-family:'Quicksand',Verdana;
+        font-size:20px;
+        color:white;
+        width:100px;
+        float:left;
+        margin-left:10px;
+        padding:5px;
+         cursor:pointer;
 
     }
+    .HeaderText
+    {
+     font-family:'Quicksand',Verdana;
+        font-size:20px;
+        color:white;
+        width:75%;
+       
+       
+        
+    }
+    .CitySearch
+    {
+       font-family:'Quicksand',Verdana;
+       width:500px;
+      
+      
+    }
+
 
 </style>
-
+<div style="padding-left:20px;padding-right:20px">
 <div style="border-bottom:1px solid white">
     <div class="CapHeader">
     Cities
     </div>
-    <div>
+    <div class="HeaderText">
         Explore the Best Days people have shared on Scoutabout. This list is a collection of Guides people made for you to explore.
     </div>
-</div>
-<div>
+</div></div>
+<div style="padding:20px">
+    <div>
     @using (Html.BeginForm("SearchCity", "Location",FormMethod.Get))
     {
-      <div>@Html.TextBox("CitySearch","",new { @class ="CitySearch"})</div>
+      <div style="float:left" >@Html.TextBox("CitySearch","",new { @class ="CitySearch"}) </div><div class="SearchBtn">SEARCH</div>
       
     }
    
-    
+    </div>
 
 
 </div>
+<div class="CityContext">
 
+</div>
 
-   <script type="text/javascript">
-
-       $(document).ready(function () {
+<script type="text/javascript">
+    $(document).ready(function () {
         $('.CitySearch').blur(function () {
             var params = { userName: $(this).val() };
             $.ajax({
-                url: "Location/SearchCities",
+                url: "Home/SearchUser",
                 type: "get",
                 data: { userName: $(".CitySearch").val() },
                 success: function (response, textStatus, jqXHR) {
                     if (response.IsExisting) {
-                       
+                        // User name is existing already, you can display a message to the user
+                        $("#regTitle").html("Already Exists")
                     }
                     else {
-                       
+                        // User name is not existing
+                        $("#regTitle").html("Available")
                     }
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
@@ -61,9 +97,8 @@
                 // callback handler that will be called on completion
                 // which means, either on success or error
                 complete: function () {
-                }
+                    }
             });
         });
     });
-
 </script>
