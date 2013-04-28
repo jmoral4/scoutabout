@@ -1,1 +1,47 @@
 ﻿
+
+.smallHeader
+{
+     font-family:'Quicksand',Verdana;
+        font-size:15px;
+        color:white;
+        text-transform:uppercase;
+}
+    .CapHeader
+    {
+        font-family:'Quicksand',Verdana;
+        font-size:40px;
+        color:white;
+        text-transform:uppercase;
+        float:left;
+        padding:10px;
+    }
+    .SearchBtn
+    {
+    border:1px solid white;
+     font-family:'Quicksand',Verdana;
+        font-size:20px;
+        color:white;
+        width:100px;
+        float:left;
+        margin-left:10px;
+        padding:5px;
+         cursor:pointer;
+
+    }
+    .HeaderText
+    {
+     font-family:'Quicksand',Verdana;
+        font-size:20px;
+        color:white;
+        width:75%;
+       
+       
+        
+    }
+    .CitySearch
+    {
+       font-family:'Quicksand',Verdana;
+       width:500px;
+      
+    }

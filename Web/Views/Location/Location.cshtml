@@ -4,50 +4,7 @@
 
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand">
 
-<style>
 
-    .CapHeader
-    {
-        font-family:'Quicksand',Verdana;
-        font-size:40px;
-        color:white;
-        text-transform:uppercase;
-        float:left;
-        padding:10px;
-    }
-    .SearchBtn
-    {
-    border:1px solid white;
-     font-family:'Quicksand',Verdana;
-        font-size:20px;
-        color:white;
-        width:100px;
-        float:left;
-        margin-left:10px;
-        padding:5px;
-         cursor:pointer;
-
-    }
-    .HeaderText
-    {
-     font-family:'Quicksand',Verdana;
-        font-size:20px;
-        color:white;
-        width:75%;
-       
-       
-        
-    }
-    .CitySearch
-    {
-       font-family:'Quicksand',Verdana;
-       width:500px;
-      
-      
-    }
-
-
-</style>
 <div style="padding-left:20px;padding-right:20px">
 <div style="border-bottom:1px solid white">
     <div class="CapHeader">
@@ -77,11 +34,11 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('.CitySearch').blur(function () {
-            var params = { userName: $(this).val() };
+            var params = { CitySearch: $(this).val() };
             $.ajax({
                 url: "Location/SearchCities",
                 type: "get",
-                data: { userName: $(".CitySearch").val() },
+                data: params,
                 success: function (response, textStatus, jqXHR) {
                    
                         // User name is not existing
