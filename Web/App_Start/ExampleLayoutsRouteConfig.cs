@@ -10,11 +10,8 @@ namespace Web
     {
       routes.MapNavigationRoute<HomeController>("Best Days", c => c.BestDays());
       routes.MapNavigationRoute<HomeController>("Cities", c => c.Cities());
-      routes.MapNavigationRoute<HomeController>("Top Local", c => c.TopLocal());
+      routes.MapNavigationRoute<HomeController>("Mobile", c => c.TopLocal());
       routes.MapNavigationRoute<HomeController>("My Guides", c => c.MyGuides());
-
-      routes.MapNavigationRoute<HomeController>("Blog", c => c.Contact());
-      routes.MapNavigationRoute<HomeController>("Team", c => c.About());
 
     }
   }

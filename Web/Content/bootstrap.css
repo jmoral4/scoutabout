@@ -4605,6 +4605,7 @@ input[type="submit"].btn.btn-mini {
   float: left;
 }
 
+.nav .logoutForm,
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
@@ -4798,6 +4799,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inverse .brand,
+.navbar-inverse .logoutForm,
 .navbar-inverse .nav > li > a {
   color: #FF7321 ;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
