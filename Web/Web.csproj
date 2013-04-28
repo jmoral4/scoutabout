@@ -335,6 +335,8 @@
     <Content Include="Images\HeroImages\carouselmasthead_940.jpg" />
     <Content Include="Images\HeroImages\vegimasthead.jpg" />
     <Content Include="Images\HeroImages\vegimasthead_940.jpg" />
+    <Content Include="Images\Mobile\cities-handshot_s.jpg" />
+    <Content Include="Images\Mobile\cities-handshot_sm.jpg" />
     <Content Include="Images\Mobile\ss1.png" />
     <Content Include="Images\Mobile\ss2.png" />
     <Content Include="Images\Mobile\ss3.png" />
