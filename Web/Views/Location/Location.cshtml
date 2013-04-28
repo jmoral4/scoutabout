@@ -27,15 +27,18 @@
 
 </div>
 <div style="padding:20px">
-   
+    <div style="display:inline-block">
+<div class="CityContext">
 
-<div style="width:80%" class="CityContext">
+
 </div>
-
 <div class="sortContext" style="width:20%">
-</div>
+  
 
 </div>
+    </div>
+ </div>
+
 
 
 
@@ -48,10 +51,10 @@
                 type: "get",
                 data: params,
                 success: function (response, textStatus, jqXHR) {
-                   
-                        // User name is not existing
-                        $(".CityContext").html(response)
-                    
+
+                    // User name is not existing
+                    $(".CityContext").html(response)
+
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     alert("error");
@@ -59,7 +62,7 @@
                 // callback handler that will be called on completion
                 // which means, either on success or error
                 complete: function () {
-                    }
+                }
             });
         });
     });
