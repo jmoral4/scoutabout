@@ -30,16 +30,8 @@
     <div style="display:inline">
     <div  class="CityContext">
 
-
 </div>
-    <div  class="sortContext">
-  <div>
-    <div class="smallHeader">
-        Day Type
-    </div>
-  </div>
-
-</div>
+    
     </div>
  </div>
 
@@ -48,7 +40,17 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.SearchBtn').click(function () {
+
+        ExecuteSearch();
+    }
+
+
+    );
+
+
+    function ExecuteSearch()
+    {
+        
             var params = { CitySearch: $(".CitySearch").val() };
             $.ajax({
                 url: "../Location/SearchCities",
@@ -68,6 +70,8 @@
                 complete: function () {
                 }
             });
-        });
-    });
+      
+    }
+    
+
 </script>
