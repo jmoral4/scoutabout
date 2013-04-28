@@ -308,6 +308,9 @@
     <Content Include="Images\ActivityImages\wayward-vegan-cafe.jpg" />
     <Content Include="Images\Chicago.png" />
     <Content Include="Images\cities_masthead.jpg" />
+    <Content Include="Images\GuideImages\3.png" />
+    <Content Include="Images\GuideImages\4.PNG" />
+    <Content Include="Images\GuideImages\5.PNG" />
     <Content Include="Images\GuideImages\Continental-Christmas-Guide.jpg" />
     <Content Include="Images\GuideImages\Cruisin-on-the-sound.jpg" />
     <Content Include="Images\GuideImages\Kid-Day-in-the-City-Guide.jpg" />
