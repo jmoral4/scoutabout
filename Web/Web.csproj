@@ -399,6 +399,7 @@
     <Content Include="Views\Home\BestDays.cshtml" />
     <Content Include="Views\Home\Cities.cshtml" />
     <Content Include="Views\Guides\Partials\GuideBrowser.cshtml" />
+    <Content Include="Views\Location\Partials\Location.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

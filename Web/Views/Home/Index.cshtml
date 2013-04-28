@@ -1,14 +1,3 @@
 ﻿@model List<string>
 
-@using (Html.BeginForm("GuidesByCity", "Home",FormMethod.Get))
-{
-    
-    
-        @Html.Label("I'm going to ")
-    
-        @Html.DropDownList("SelectedCity", new SelectList( Model ));
-    
-        @Html.Label(" whats can I do for fun!");
-
-    <input type="submit" class="submit" value="Lets Go" />
-}
+@Html.Partial("../Location/Location")
