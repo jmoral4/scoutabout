@@ -59,6 +59,12 @@
     width: 75%;
 }
 
+.HeaderText2 {
+    font-family: 'Quicksand',Verdana;
+    font-size: 14px;
+    color: white;
+}
+
 .CitySearch {
     font-family: 'Quicksand',Verdana;
    
