@@ -1,26 +1,45 @@
-﻿@{
-  ViewBag.Title = "Contact";
+﻿@using System.Xml.XPath;
+@using System.Xml;
+@{
+  ViewBag.Title = "Blog";
+
+  //Fetch RSS XML
+  XmlTextReader udBrudRSS = new XmlTextReader("http://cdausa.wordpress.com/notes/rss");
+
+  //Create new XML document
+  XmlDocument doc = new XmlDocument();
+
+  //Load in our remote XML into our XML document
+  doc.Load(udBrudRSS);
+
+  //Select our nodes we want with some xPath
+  XmlNodeList rssItems = doc.SelectNodes("//item");
+ 
 }
 
-<hgroup class="title">
-  <h1>@ViewBag.Title.</h1>
-  <h2>@ViewBag.Message</h2>
-</hgroup>
+<div style="padding-left: 60px; padding-right: 40px; padding-top: 20px;">
+  <div>
+    <div class="CapHeader">Blog</div>
+    <div class="HeaderText"><a href="http://cdausa.wordpress.com/" target="_blank">cdausa.wordpress.com</a></div>
+  </div>
+  <br />
+  <br />
 
-<section class="contact">
-  <header>
-    <h3>Social Media</h3>
-  </header>
-  <p>
-    <span class="label">Twitter:</span>
-    <span>@@ScoutaboutUSA</span>
-  </p>
-  <p>
-    <span class="label">FaceBook:</span>
-    <span>ScoutaboutUSA</span>
-  </p>
-  <p>
-    <span class="label">Blog:</span>
-    <span><a href="http://cdausa.wordpress.com/" target="_blank">cdausa.wordpress.com</a></span>
-  </p>
-</section>
+  <section class="contact">
+    <ul>
+      @{
+        //For each item node we can then ouput what we want
+        foreach (XmlNode node in rssItems)
+        { 
+ 
+        <li>
+          <div class="date">@node["pubDate"].InnerText</div>
+          <a href="@node["link"].InnerText">@node["title"].InnerText<span></span></a>
+        </li>
+        }
+      }
+    </ul>
+  </section>
+
+</div>
+

@@ -14,6 +14,7 @@ namespace Web
       routes.MapNavigationRoute<HomeController>("My Guides", c => c.MyGuides());
 
       routes.MapNavigationRoute<HomeController>("About", c => c.About());
+      routes.MapNavigationRoute<HomeController>("Blog", c => c.Contact());
 
     }
   }
