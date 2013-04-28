@@ -197,7 +197,6 @@
     <Compile Include="Models\Interest.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Location.cs" />
-    <Compile Include="Models\ScoutAboutWebContext.cs" />
     <Compile Include="Models\Tag.cs" />
     <Compile Include="Models\TypeOfDay.cs" />
     <Compile Include="Models\User.cs" />
