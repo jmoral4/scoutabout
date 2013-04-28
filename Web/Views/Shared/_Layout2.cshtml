@@ -22,7 +22,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="/" title="Scout About">Scout About</a>
+          <div class="brand common-font">
+        <a href="/" title="Scout About"><span style="color:#ff7321">scout</span><span style="color:#9f9f9f">ab</span><span style="color:#ff7321">o</span><span><span style="color:#9f9f9f">ut</span></span></a>
+          </div>
         <div class="nav-collapse collapse">
           <ul class="nav">
             @Html.Navigation()
@@ -31,15 +33,18 @@
       </div>
     </div>
   </div>
-  <div class="container">
+    <div style="width:80%;margin:auto;background-color:#9f9f9f"  >
+         <div  class="container">
     @Html.Partial("_alerts")
     @Html.Partial("_validationSummary")
+
     @RenderBody()
     <hr style="padding-left:20px;padding-right:20px">
     <footer>
       <p>&copy; North Technologies, LLC @System.DateTime.Now.ToString("yyyy")</p>
     </footer>
   </div>
+    </div>
   @Scripts.Render("~/bundles/bootstrap")
   @RenderSection("Scripts", required: false)
 </body>

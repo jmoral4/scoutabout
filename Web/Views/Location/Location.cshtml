@@ -27,21 +27,24 @@
 
 </div>
 <div style="padding:20px">
-    <div style="display:inline-block">
+   
+
 <div style="width:80%" class="CityContext">
+</div>
+
+<div class="sortContext" style="width:20%">
+</div>
 
 </div>
-<div class="sortContext" style="width:20%">
-  
-</div>
-    </div>
-</div>
+
+
+
 <script type="text/javascript">
     $(document).ready(function () {
         $('.CitySearch').blur(function () {
-            var params = { CitySearch: $(this).val() };
+            var params = { CitySearch: $(".CitySearch").val() };
             $.ajax({
-                url: "Location/SearchCities",
+                url: "../Location/SearchCities",
                 type: "get",
                 data: params,
                 success: function (response, textStatus, jqXHR) {
