@@ -1,7 +1,7 @@
 @model Web.Models.Guide
 
 @{
-    ViewBag.Title = "description";
+    ViewBag.Title = Model.Title;
 }
 
 @section head
@@ -12,26 +12,32 @@
 
 <div class="guide-header row">
     <div class="span6">
-        <h2>BEST DAY DETAIL</h2>
+        <h2>@Model.Title</h2>
     </div>
     <div class="span6">
-        <span class="page-description">Find out all the gritty details about the Best Day you selected.
-            
+        <span class="page-description">
+            @Model.Summary
         </span>
     </div>
 
 </div>
 <div class="border-row row">
     <div class="span12">
-
     </div>
 </div>
 <div class="guide-details row">
     <div class="span5">
-        <h3>@Model.Title</h3>
-        <p>
-            @Model.Summary
-        </p>
+        <div class="guide-thumbnail">
+            @{ var count = 0; }
+            @foreach (Web.Models.Item item in Model.ActivityItems)
+            {
+                <img src="@item.ImageUrl" />
+                if (count++ > 3)
+                {
+                    continue;
+                }
+            }
+        </div>
         <ul class="social-list">
             <li>Views: @Model.Views</li>
             <li>Likes: @Model.Likes</li>

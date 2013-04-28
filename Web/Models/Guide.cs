@@ -28,5 +28,26 @@ namespace Web.Models
         [ForeignKey("AuthorId")]
         public User Author { get; set; }
 
+        /// <summary>
+        /// A List of the Items in the underlying Activities of this guide
+        /// </summary>
+        public IEnumerable<Item> ActivityItems
+        {
+            get
+            {
+                List<Item> ret = new List<Item>();
+
+                foreach (Activity act in Activities)
+                {
+                    foreach (Item item in act.Items)
+                    {
+                        ret.Add(item);
+                    }
+                }
+
+                return ret;
+            }
+        }
+
     }
 }

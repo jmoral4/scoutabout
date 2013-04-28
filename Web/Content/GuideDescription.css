@@ -86,3 +86,17 @@ h1,h2,h3,p,li,span {
     border-top: 1px solid white;
     margin-bottom:2em;
 }
+
+.guide-thumbnail {
+    padding: 0 20px;
+}
+
+    .guide-thumbnail img {
+        width: 25%;
+        margin:0;
+        padding:0;
+        display:inline-block;
+    }
+.guide-thumbnail img:first-child {
+    width: 100%;
+}
