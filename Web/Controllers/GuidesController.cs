@@ -21,22 +21,25 @@ namespace Web.Controllers
         {
             return View(context.Guides.Include(guide => guide.Activities).Include(guide => guide.Author).ToList());
         }
-
-        //
-        // GET: /Guides/
-        public ActionResult GuideThumbnails()
+        public ActionResult GuideBrowser()
         {
-            return PartialView("Partials/GuideThumbnails",context.Guides.Include(guide => guide.Activities).ToList());
+            return PartialView("Partials/GuideBrowser",context.Guides.Include(guide => guide.Activities).Include(guide => guide.Author).ToList());        
         }
-        public ActionResult GuideThumbnailPartial(int id)
+       
+        // GET: /Guides/
+        public ActionResult GuideThumbnails(int id)
+        {
+            return PartialView("Partials/GuideThumbnails", context.Guides.Include(guide => guide.Activities).Where(x => x.GuideId == id).ToList());
+        }
+        public ActionResult GuideThumbnailPartial(Guide g)
         {
            // RenderPartial
-            return PartialView("Partials/GuideThumbnailPartial", context.Guides.Include(guide => guide.Activities).Where(x=> x.GuideId == id).ToList());
+            return PartialView("Partials/GuideThumbnailPartial", context.Guides.Include(guide => guide.Activities).Where(x=> x.GuideId == g.GuideId).ToList());
         }
-        public ActionResult GuideThumbnailDetails(int id)
+        public ActionResult GuideThumbnailDetails(Guide g)
         {
             // RenderPartial
-            return PartialView("Partials/GuideThumbnailDetails", context.Guides.Include(guide => guide.Activities).Where(x => x.GuideId == id).ToList());
+            return PartialView("Partials/GuideThumbnailDetails", context.Guides.Include(guide => guide.Activities).Where(x => x.GuideId == g.GuideId).ToList());
         }
      
         // GET: /Guides/Details/5

@@ -9,19 +9,19 @@
         @Model.Title
     </div>
     <div class="viewsAuthor">
-        @Model.Author
+        @Model.Author.Name
     </div>
     <div class="viewsSummary">
-        <p>@Model.Summary.Substring(0,120)</p>
+        <p>@Model.Summary.Substring(0, Model.Summary.Length > 120 ? 120 : Model.Summary.Length-1)</p>
     </div>
     <div class="viewsThumbnail">
-        Views:
+        Views: @Model.Views.ToString() 
     </div>
     <div class="viewsThumbnail">
-        Likes:
+        Likes: @Model.Likes.ToString()
     </div>
     <div class="viewsThumbnail">
-        Follows:
+        Follows:@if (Model.Follow.HasValue) { Model.Follow.Value.ToString(); }
     </div>
  </div>
     

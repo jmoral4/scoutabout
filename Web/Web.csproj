@@ -398,6 +398,7 @@
     <Content Include="Views\Home\TopLocal.cshtml" />
     <Content Include="Views\Home\BestDays.cshtml" />
     <Content Include="Views\Home\Cities.cshtml" />
+    <Content Include="Views\Guides\Partials\GuideBrowser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

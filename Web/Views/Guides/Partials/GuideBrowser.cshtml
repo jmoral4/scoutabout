@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Web.Models.Guide>
+
+@{
+    ViewBag.Title = "GuideBrowser";    
+}
+
+@foreach( var item in Model)
+{
+    <div>
+        @Html.Partial("Partials/GuideThumbnails", item);       
+    </div>
+}
