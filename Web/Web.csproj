@@ -182,6 +182,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InterestsController.cs" />
     <Compile Include="Controllers\ItemsController.cs" />
+    <Compile Include="Controllers\LocationController.cs" />
     <Compile Include="Controllers\TagsController.cs" />
     <Compile Include="Controllers\TypeOfDaysController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
@@ -195,6 +196,8 @@
     <Compile Include="Models\Guide.cs" />
     <Compile Include="Models\Interest.cs" />
     <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\ScoutAboutWebContext.cs" />
     <Compile Include="Models\Tag.cs" />
     <Compile Include="Models\TypeOfDay.cs" />
     <Compile Include="Models\User.cs" />
@@ -275,6 +278,9 @@
     <None Include="Properties\PublishProfiles\Scoutabout - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\Scoutabout - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\Chicago.png" />
+    <Content Include="Images\Portland.png" />
+    <Content Include="Images\Sanfran.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -384,9 +390,12 @@
     <Content Include="Views\Shared\_validationSummary.cshtml" />
     <Content Include="Views\Home\Partials\CitiesParital.cshtml" />
     <Content Include="Views\Guides\Description.cshtml" />
+    <Content Include="Views\Location\Partials\LocationDetailPartial.cshtml" />
+    <Content Include="Views\Location\Partials\LocationPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Home\Partials\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

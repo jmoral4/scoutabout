@@ -1,0 +1,16 @@
+﻿@model Web.Models.Location
+
+<div style="display:inline-block">
+    <div style="float:left;margin:10px">
+        <img height="84"  width="84" src= "@Url.Content(Model.Image.ToString())" alt="IMAGES" />
+    </div>
+    <div class="description" style="width:400px;padding-top:10px;float:left">
+        <div>
+            @Html.Label(Model.City,new { @class="underline"})
+        </div>
+        <div>
+            @Html.Raw(Model.Summary)
+        </div>
+    </div>
+    
+</div>

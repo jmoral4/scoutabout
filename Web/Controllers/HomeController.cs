@@ -22,6 +22,7 @@ namespace Web.Controllers
 
     public ActionResult GuidesByCity(string SelectedCity)
     {
+       
         IEnumerable<Guide> guides = SearchForGuidesBy(SelectedCity);
         return View(guides);
     }
