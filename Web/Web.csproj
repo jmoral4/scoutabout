@@ -382,7 +382,7 @@
     <Content Include="Views\Items\Details.cshtml" />
     <Content Include="Views\Items\Index.cshtml" />
     <Content Include="Views\Items\_CreateOrEdit.cshtml" />
-    <Content Include="Views\Home\GuidesByCity.cshtml" />
+    <Content Include="Views\Home\MyGuides.cshtml" />
     <Content Include="Views\Shared\_alerts.cshtml">
       <SubType>Code</SubType>
     </Content>
@@ -395,6 +395,9 @@
     <Content Include="Views\Guides\Partials\GuideThumbnailPartial.cshtml" />
     <Content Include="Views\Guides\Partials\GuideThumbnailDetails.cshtml" />
     <Content Include="Views\Guides\Partials\GuideThumbnails.cshtml" />
+    <Content Include="Views\Home\TopLocal.cshtml" />
+    <Content Include="Views\Home\BestDays.cshtml" />
+    <Content Include="Views\Home\Cities.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
