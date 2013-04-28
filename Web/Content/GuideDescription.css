@@ -20,7 +20,7 @@
     position: absolute;
     width: 300px;
     top: 0;
-    left: 70px;
+    left: 80px;
 }
 
 .timeline-item-details {
@@ -30,10 +30,11 @@
 }
 
     .timeline-item-details img {
-        
+        width: 100%;
+        text-align: center;
     }
 
-.timeline-items > div:hover .timeline-item-details {
+.timeline-items > div:hover .timeline-item-details, .timeline-item-details.toggled {
     background-color: #EBEBEB;
     color: black;
     display: block;
@@ -105,3 +106,8 @@ h1, h2, h3, p, li, span {
         .guide-thumbnail img:first-child {
             width: 100%;
         }
+
+.share-icons img {
+    display: inline-block;
+    cursor:pointer;
+}

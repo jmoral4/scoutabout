@@ -38,6 +38,14 @@
                 }
             }
         </div>
+        <h3>Share</h3>
+        <div class="share-icons">
+            <img src="~/Content/images/facebook-64.png" />
+            <img src="~/Content/images/twitter-64.png" />
+            <img src="~/Content/images/googleplus-64.png" />
+            <img src="~/Content/images/pinterest-64.png" />
+            <img src="~/Content/images/instagram-64.png" />
+        </div>
         <ul class="social-list">
             <li>Views: @Model.Views</li>
             <li>Likes: @Model.Likes</li>
@@ -119,3 +127,10 @@
 
     </div>
 </div>
+<script type="text/javascript">
+    $(function () {
+        $(".timeline-items > div").click(function () {
+            $(this).find(".timeline-item-details").toggleClass("toggled");
+        });
+    });
+</script>
