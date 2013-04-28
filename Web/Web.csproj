@@ -197,6 +197,7 @@
     <Compile Include="Models\Interest.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\ScoutAboutWebContext.cs" />
     <Compile Include="Models\Tag.cs" />
     <Compile Include="Models\TypeOfDay.cs" />
     <Compile Include="Models\User.cs" />
@@ -297,9 +298,7 @@
     <Content Include="Scripts\knockout-2.2.1.debug.js" />
     <Content Include="Scripts\knockout-2.2.1.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -382,27 +381,18 @@
     <Content Include="Views\Items\Details.cshtml" />
     <Content Include="Views\Items\Index.cshtml" />
     <Content Include="Views\Items\_CreateOrEdit.cshtml" />
-    <Content Include="Views\Home\MyGuides.cshtml" />
+    <Content Include="Views\Home\GuidesByCity.cshtml" />
     <Content Include="Views\Shared\_alerts.cshtml">
       <SubType>Code</SubType>
     </Content>
     <Content Include="Views\Shared\_validationSummary.cshtml" />
-    <Content Include="Views\Home\Partials\CitiesParital.cshtml" />
-    <Content Include="Views\Guides\Description.cshtml" />
     <Content Include="Views\Location\Partials\LocationDetailPartial.cshtml" />
     <Content Include="Views\Location\Partials\LocationPartial.cshtml" />
-    <Content Include="Views\Home\Partials\Browse.cshtml" />
-    <Content Include="Views\Guides\Partials\GuideThumbnailPartial.cshtml" />
-    <Content Include="Views\Guides\Partials\GuideThumbnailDetails.cshtml" />
-    <Content Include="Views\Guides\Partials\GuideThumbnails.cshtml" />
-    <Content Include="Views\Home\TopLocal.cshtml" />
-    <Content Include="Views\Home\BestDays.cshtml" />
-    <Content Include="Views\Home\Cities.cshtml" />
-    <Content Include="Views\Guides\Partials\GuideBrowser.cshtml" />
-    <Content Include="Views\Location\Partials\Location.cshtml" />
+    <Content Include="Views\Location\Location.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Home\Partials\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
