@@ -436,7 +436,6 @@
     <Content Include="Views\Home\TopLocal.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include=".hack\" />
     <Folder Include="App_Data\" />
     <Folder Include="Views\Home\Partials\" />
   </ItemGroup>
