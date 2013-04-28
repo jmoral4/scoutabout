@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Web.Models.Location>
+
+@{
+
+    foreach(var loc in Model)
+    {
+
+        <div style="padding:10px; border-bottom :1px solid white">
+          @Html.Partial("Partials/LocationPartial", loc)
+        </div>
+    }
+}
