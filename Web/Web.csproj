@@ -216,6 +216,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\scoutabout.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -420,6 +421,12 @@
     <Content Include="Views\Guides\Partials\GuideThumbnailPartial.cshtml" />
     <Content Include="Views\Guides\Partials\GuideThumbnails.cshtml" />
     <Content Include="Views\Account\_ViewStart.cshtml" />
+    <Content Include="Views\Home\BestDays.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Home\Cities.cshtml" />
+    <Content Include="Views\Home\MyGuides.cshtml" />
+    <Content Include="Views\Home\TopLocal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
