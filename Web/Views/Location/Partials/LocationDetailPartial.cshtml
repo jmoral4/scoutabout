@@ -5,10 +5,11 @@
         <img height="84"  width="84" src= "@Url.Content(Model.Image.ToString())" alt="IMAGES" />
     </div>
     <div class="description" style="width:400px;padding-top:10px;float:left">
-        <div>
-            @Html.Label(Model.City,new { @class="smallHeader"})
+        <div class="underline">
+            @Html.Label(Model.City + "," + Model.State ,new { @class="smallHeader"})
+           
         </div>
-        <div>
+        <div class="textLabel">
             @Html.Raw(Model.Summary)
         </div>
     </div>

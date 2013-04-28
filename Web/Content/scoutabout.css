@@ -3,10 +3,21 @@
 .smallHeader
 {
      font-family:'Quicksand',Verdana;
-        font-size:15px;
+        font-size:20px;
         color:white;
         text-transform:uppercase;
+         text-decoration:underline;
 }
+
+.textLabel
+{
+     font-family:'Quicksand',Verdana;
+        font-size:15px;
+        color:white;
+       
+        
+}
+
     .CapHeader
     {
         font-family:'Quicksand',Verdana;
