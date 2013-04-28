@@ -21,7 +21,7 @@ namespace Web.Models
         public decimal? Cost { get; set; }
         public TimeSpan? Duration { get; set; }
         public DateTimeOffset? StartTime { get; set; }
-        public DateTimeOffset? EndTime {get;set;}
+        public DateTimeOffset? EndTime { get; set; }
 
         public virtual ICollection<Item> Items { get; set; }
 
@@ -62,6 +62,19 @@ namespace Web.Models
                 {
                     return 1;
                 }
+            }
+        }
+
+        public string GoogleLink
+        {
+            get
+            {
+                const string GoogleAddressStart = "https://www.google.com/search?q=";
+                string ret = "http://portland.startupweekend.org/";
+                if (!string.IsNullOrEmpty(PlaceName))
+                    ret = GoogleAddressStart + PlaceName.Replace(" ", "+").Trim();
+
+                return ret;
             }
         }
     }
