@@ -17,7 +17,7 @@ namespace Web
   {
     protected void Application_Start()
     {
-      System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<Web.Models.WebContext>());
+     // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<Web.Models.WebContext>());
       AreaRegistration.RegisterAllAreas();
 
       WebApiConfig.Register(GlobalConfiguration.Configuration);

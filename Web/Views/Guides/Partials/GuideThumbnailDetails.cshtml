@@ -5,23 +5,12 @@
 }
 
 <div id="Details">
-    <div id="guideTitle" class="viewsTitle">
-        @Model.Title
-    </div>
-    <div class="viewsAuthor">
-        @Model.Author.Name
-    </div>
-    <div class="viewsSummary">
+    <div>
+        <h4 class="text-left"> @Model.Title</h4> <a href='[]' class="text-right">@Model.Author.Name</a>
         <p>@Model.Summary.Substring(0, Model.Summary.Length > 120 ? 120 : Model.Summary.Length-1)</p>
     </div>
-    <div class="viewsThumbnail">
-        Views: @Model.Views.ToString() 
-    </div>
-    <div class="viewsThumbnail">
-        Likes: @Model.Likes.ToString()
-    </div>
-    <div class="viewsThumbnail">
-        Follows:@if (Model.Follow.HasValue) { Model.Follow.Value.ToString(); }
-    </div>
+   <p class="text-left"> Views: @Model.Views.ToString() </p>
+       <p  class="text-left">Likes: @Model.Likes.ToString()</p>
+      <p  class="text-left"> Follows:@if (Model.Follow.HasValue) { Model.Follow.Value.ToString(); }</p> 
  </div>
     

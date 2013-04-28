@@ -386,6 +386,7 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="Views\Shared\_validationSummary.cshtml" />
+    <Content Include="Views\Guides\Description.cshtml" />
     <Content Include="Views\Location\Partials\LocationDetailPartial.cshtml" />
     <Content Include="Views\Location\Partials\LocationPartial.cshtml" />
     <Content Include="Views\Location\Location.cshtml" />
