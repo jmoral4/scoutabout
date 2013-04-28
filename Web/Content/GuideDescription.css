@@ -1,8 +1,9 @@
 ﻿ul.timeline {
-    list-style-type:none;
+    list-style-type: none;
     border-left: 1px solid black;
     border-top: 1px solid black;
 }
+
     ul.timeline li {
         height: 40px;
         padding-left: 0.5em;
@@ -10,15 +11,78 @@
     }
 
 .timeline-wrapper {
-    position:relative;
+    position: relative;
 }
 
 .timeline-items > div {
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(159, 160, 159, 0.8);
     padding: 0 2px;
-    position:absolute;
+    position: absolute;
     width: 300px;
-    top:0;
-    left:70px;
+    top: 0;
+    left: 70px;
 }
 
+.timeline-item-details {
+    display: none;
+    z-index: 10;
+    padding: 1em 3em;
+}
+
+.timeline-items > div:hover .timeline-item-details {
+    background-color: #EBEBEB;
+    color:black;
+    display: block;
+    position: absolute;
+    margin-left: 2em;
+    width: 300px;
+    box-shadow: 0 0 3px darkgray;
+}
+
+.timeline-item-values tr td:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+.slider {
+    margin-top: 1.5em;
+}
+
+.social-list {
+    list-style-type: none;
+}
+
+* {
+    font-family: 'Quicksand', Arial, sans-serif;
+    box-sizing:border-box;
+}
+
+h1,h2,h3,p,li,span {
+
+    color: white;
+}
+
+.guide-header {
+}
+
+    .guide-header h2 {
+        padding: 0 20pxem;
+    }
+
+.guide-details .span5 h3 {
+    padding: 0 20px;
+}
+
+.guide-details .span5 p {
+    padding: 0 20px;
+}
+
+.page-description {
+    margin: 20px 0;
+    display:block;
+}
+
+.border-row .span12 {
+    border-top: 1px solid white;
+    margin-bottom:2em;
+}

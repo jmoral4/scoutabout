@@ -7,6 +7,7 @@
 @section head
 {
     <link type="text/css" rel="stylesheet" href="~/Content/GuideDescription.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand">
 }
 
 <div class="guide-header row">
@@ -14,11 +15,16 @@
         <h2>BEST DAY DETAIL</h2>
     </div>
     <div class="span6">
-        <span class="">Find out all the gritty details about the Best Day you selected.
+        <span class="page-description">Find out all the gritty details about the Best Day you selected.
             
         </span>
     </div>
 
+</div>
+<div class="border-row row">
+    <div class="span12">
+
+    </div>
 </div>
 <div class="guide-details row">
     <div class="span5">
@@ -38,11 +44,55 @@
             {
                 if (activity.StartTime.HasValue)
                 {
-                    <div style="top:@Html.Raw(activity.StartTime.Value.Hour * 20)px">
-                        <h3>@activity.Title</h3>
-                        @Html.Raw(activity.StartTime.Value.Hour)
+                <div style="top:@Html.Raw(activity.Hour * 40 + 2)px; height:@Html.Raw(activity.Height)px">
+                    <h3>@activity.Title</h3>
+                    <div class="timeline-item-details" style="top:@Html.Raw(activity.Height)px">
+                        <table>
+                            <tbody class="timeline-item-values">
+                                <tr>
+                                    <td>Location:</td>
+                                    <td><a href="">@activity.PlaceName</a></td>
+                                </tr>
+                                <tr>
+                                    <td>City:</td>
+                                    <td>@activity.City, @activity.State</td>
+                                </tr>
+                                @if (activity.Cost.HasValue)
+                                {
+                                    // Do Nothing
+                                }
+                                else if (activity.Cost.Value == 0)
+                                {
+                                    <tr>
+                                        <td>Cost:</td>
+                                        <td>@Html.Raw("Free")</td>
+                                    </tr>
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td>Cost:</td>
+                                        <td>$@activity.Cost.Value</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        @if (activity.Items.Count > 0)
+                        {
+                            <div class="slider">
+                                @foreach (Web.Models.Item item in activity.Items)
+                                {
+                                    <div class="slider-item">
+                                        <a href="@item.WebUrl">
+                                            <img src="@item.ImageUrl" alt="@activity.Title" />
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+                        }
                     </div>
-                }                        
+                </div>
+                }
             }
         </div>
         <ul class="timeline">
