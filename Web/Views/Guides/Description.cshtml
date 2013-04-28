@@ -4,15 +4,20 @@
     ViewBag.Title = "description";
 }
 
+@RenderSection("head")
+{
+    <link href="~/Content/GuideDescription.css" />
+}
+
 <div class="guide-header row">
     <div class="span6">
         <h2>BEST DAY DETAIL</h2>
     </div>
     <div class="span6">
-         <span class="">Find out all the gritty details about the Best Day you selected.
-    </span>
+        <span class="">Find out all the gritty details about the Best Day you selected.
+        </span>
     </div>
-   
+
 </div>
 <div class="guide-details row">
     <div class="span5">
@@ -21,10 +26,27 @@
             @Model.Summary
         </p>
         <ul class="social-list">
-            <li>Views: @Model</li>
-
+            <li>Views: @Model.Views</li>
+            <li>Likes: @Model.Likes</li>
+            <li>Follows: @Model.Follow</li>
         </ul>
     </div>
     <div class="span7">
+
+        <ul class="timeline">
+            @for (int i = 0; i < 5; ++i)
+            {
+                <li class="timeline">
+                    @Html.Raw(i + 7)am
+                </li>
+            }
+            <li>12pm</li>
+            @for (int i = 0; i < 6; ++i)
+            {
+                <li class="timeline">
+                    @Html.Raw(i + 1)pm
+                </li>
+            }
+        </ul>
     </div>
 </div>
