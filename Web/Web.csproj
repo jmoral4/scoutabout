@@ -278,7 +278,32 @@
     <None Include="Properties\PublishProfiles\Scoutabout - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\Scoutabout - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\ActivityImages\bainbridgeferry.jpg" />
+    <Content Include="Images\ActivityImages\BathtubGin9254.jpg" />
+    <Content Include="Images\ActivityImages\CafeFlora_KellyO.jpg" />
+    <Content Include="Images\ActivityImages\dahlialounge.jpg" />
+    <Content Include="Images\ActivityImages\dragonboat.jpg" />
+    <Content Include="Images\ActivityImages\Fresh_Bistro_01.jpg" />
+    <Content Include="Images\ActivityImages\goldengardens_volleyball.jpg" />
+    <Content Include="Images\ActivityImages\hanas.jpg" />
+    <Content Include="Images\ActivityImages\lacote.jpg" />
+    <Content Include="Images\ActivityImages\moviesonwall.jpg" />
+    <Content Include="Images\ActivityImages\newearthmusic.jpg" />
+    <Content Include="Images\ActivityImages\Nook.jpg" />
+    <Content Include="Images\ActivityImages\oasistea.jpg" />
+    <Content Include="Images\ActivityImages\oldfishinghole.jpg" />
+    <Content Include="Images\ActivityImages\pacificscience.jpg" />
+    <Content Include="Images\ActivityImages\ranchbravo.jpg" />
+    <Content Include="Images\ActivityImages\RentaCanoe.jpg" />
+    <Content Include="Images\ActivityImages\showbox.jpg" />
+    <Content Include="Images\ActivityImages\Thais.jpg" />
+    <Content Include="Images\ActivityImages\thistletairs.jpg" />
+    <Content Include="Images\ActivityImages\veraproject.jpg" />
+    <Content Include="Images\ActivityImages\wasabibistro.jpg" />
+    <Content Include="Images\ActivityImages\Water tower in Seattle.jpg" />
+    <Content Include="Images\ActivityImages\wayward-vegan-cafe.jpg" />
     <Content Include="Images\Chicago.png" />
+    <Content Include="Images\GuideImages\Cruisin-on-the-sound.jpg" />
     <Content Include="Images\Portland.png" />
     <Content Include="Images\Sanfran.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -380,7 +405,6 @@
     <Content Include="Views\Items\Details.cshtml" />
     <Content Include="Views\Items\Index.cshtml" />
     <Content Include="Views\Items\_CreateOrEdit.cshtml" />
-    <Content Include="Views\Home\GuidesByCity.cshtml" />
     <Content Include="Views\Shared\_alerts.cshtml">
       <SubType>Code</SubType>
     </Content>
