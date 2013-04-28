@@ -302,7 +302,10 @@
     <Content Include="Images\ActivityImages\Water tower in Seattle.jpg" />
     <Content Include="Images\ActivityImages\wayward-vegan-cafe.jpg" />
     <Content Include="Images\Chicago.png" />
+    <Content Include="Images\GuideImages\Continental-Christmas-Guide.jpg" />
     <Content Include="Images\GuideImages\Cruisin-on-the-sound.jpg" />
+    <Content Include="Images\GuideImages\Kid-Day-in-the-City-Guide.jpg" />
+    <Content Include="Images\GuideImages\Musical-Momentos-Guide.jpg" />
     <Content Include="Images\Portland.png" />
     <Content Include="Images\Sanfran.png" />
     <Content Include="Scripts\bootstrap.js" />
