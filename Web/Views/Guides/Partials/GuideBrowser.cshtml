@@ -14,7 +14,7 @@
         MockModels.Add(item);
     }
     
-    while(MockModels.Count < 9)
+    while(MockModels.Count < 12)
     {
         Web.Models.Guide g = new Web.Models.Guide();
         g.ImageUrl = guideUrls[r.Next(0,4)];
@@ -25,24 +25,24 @@
         g.Title = g.ImageUrl.Replace(".jpg", "");
         g.Summary = "something cool";
         g.GuideId = Model.First().GuideId;
-        MockModels.Add(g);
-        
+        MockModels.Add(g);        
     }
       
 }
-<center>
+
+<div class="">
 <ul class="thumbnails">
 @foreach( var item in MockModels)
 {
-  <li class="span3">
-    <div  style="width:210px; height:400px;" class="well">
+  <li >
+    <div  style="width:200px; height:400px;" class="well">
            @Html.Partial("Partials/GuideThumbnails", item) 
     </div>
   </li>    
 }
 </ul>
 
-<div class="pagination pagination-centered pagination-large">
+<div class="pagination pagination-centered pagination-large" >
   <ul>
     <li><a href="#">Prev</a></li>
     <li><a href="#">1</a></li>
@@ -53,4 +53,6 @@
    <li><a href="#">Next</a></li>
   </ul>
 </div>
-    </center>
+
+</div>
+
