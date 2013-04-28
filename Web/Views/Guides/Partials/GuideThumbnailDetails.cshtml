@@ -1,0 +1,27 @@
+﻿@model Web.Models.Guide
+
+@{
+    ViewBag.Title = "GuideThumbnailDetails";    
+}
+
+<div id="Details">
+    <div id="guideTitle" class="viewsTitle">
+        @Model.Title
+    </div>
+    <div class="viewsAuthor">
+        @Model.Author
+    </div>
+    <div class="viewsSummary">
+        <p>@Model.Summary.Substring(0,120)</p>
+    </div>
+    <div class="viewsThumbnail">
+        Views:
+    </div>
+    <div class="viewsThumbnail">
+        Likes:
+    </div>
+    <div class="viewsThumbnail">
+        Follows:
+    </div>
+ </div>
+    

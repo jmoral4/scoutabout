@@ -29,7 +29,7 @@ namespace Web.Controllers
 
     private IEnumerable<Guide> SearchForGuidesBy(string City)
     {
-       
+         
         return new List<Guide>().DefaultIfEmpty();
     }
 

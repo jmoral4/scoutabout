@@ -1,0 +1,11 @@
+﻿@model Web.Models.Guide
+
+@{
+    ViewBag.Title = "GuideThumbnails";    
+}
+<div>
+    @Html.Partial("GuideThumbnailPartial", Model.GuideId);
+</div>
+<div>
+    @Html.Partial("GuideThumbnailDetails", Model.GuideId);
+</div>

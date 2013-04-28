@@ -390,6 +390,10 @@
     <Content Include="Views\Guides\Description.cshtml" />
     <Content Include="Views\Location\Partials\LocationDetailPartial.cshtml" />
     <Content Include="Views\Location\Partials\LocationPartial.cshtml" />
+    <Content Include="Views\Home\Partials\Browse.cshtml" />
+    <Content Include="Views\Guides\Partials\GuideThumbnailPartial.cshtml" />
+    <Content Include="Views\Guides\Partials\GuideThumbnailDetails.cshtml" />
+    <Content Include="Views\Guides\Partials\GuideThumbnails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

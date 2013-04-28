@@ -13,6 +13,7 @@ namespace Web.Controllers
     {
         private WebContext context = new WebContext();
 
+
         //
         // GET: /Guides/
 
@@ -22,6 +23,22 @@ namespace Web.Controllers
         }
 
         //
+        // GET: /Guides/
+        public ActionResult GuideThumbnails()
+        {
+            return PartialView("Partials/GuideThumbnails",context.Guides.Include(guide => guide.Activities).ToList());
+        }
+        public ActionResult GuideThumbnailPartial(int id)
+        {
+           // RenderPartial
+            return PartialView("Partials/GuideThumbnailPartial", context.Guides.Include(guide => guide.Activities).Where(x=> x.GuideId == id).ToList());
+        }
+        public ActionResult GuideThumbnailDetails(int id)
+        {
+            // RenderPartial
+            return PartialView("Partials/GuideThumbnailDetails", context.Guides.Include(guide => guide.Activities).Where(x => x.GuideId == id).ToList());
+        }
+     
         // GET: /Guides/Details/5
 
         public ViewResult Details(int id)
