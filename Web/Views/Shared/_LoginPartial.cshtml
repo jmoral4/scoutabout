@@ -1,5 +1,5 @@
 ﻿@if (Request.IsAuthenticated) {
-    <span class="logoutForm nav">
+    <span class="logoutForm nav" style="margin-top:30px;">
         Hello, @Html.ActionLink(User.Identity.Name, "Manage", "Account", routeValues: null, htmlAttributes: new { @class = "username", title = "Manage" })!
         @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" })) {
             @Html.AntiForgeryToken()

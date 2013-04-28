@@ -1,5 +1,7 @@
 ﻿@using System.Web.Optimization
+@using System.Web.UI.WebControls
 @using NavigationRoutes
+@using Web.Utilities
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +27,7 @@
         </a>
         <div class="brand common-font">
           <a style="text-decoration: none;" href="/" title="Scout About">
-            <div style="font-size: 25px"><span style="color: #ff7321">scout</span><span style="color: #9f9f9f">ab</span><span style="color: #ff7321">o</span><span><span style="color: #9f9f9f">ut</span></span></div>
+            @Html.ImageActionLink(Url.Content("/Content/images/scoutaboutlogo.png"),"Logo","Index","Home",null,new{style="margin:0;padding:0;"},new{style="margin:0;padding:0;height:40px;width:auto"})
           </a>
         </div>
         <div class="nav-collapse collapse">
@@ -34,7 +36,7 @@
           </ul>
         </div>
         <div class="nav-collapse collapse" style="float: right;">
-          <section id="login" class="nav">
+          <section id="login">
             @Html.Partial("_LoginPartial")
           </section>
         </div>
