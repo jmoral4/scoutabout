@@ -16,11 +16,10 @@
 </div></div>
 <div style="padding:20px">
     <div>
-    @using (Html.BeginForm("SearchCity", "Location",FormMethod.Get))
-    {
+   
       <div style="float:left" >@Html.TextBox("CitySearch","",new { @class ="CitySearch"}) </div><div class="SearchBtn">SEARCH</div>
       
-    }
+    
    
     </div>
 
@@ -40,6 +39,8 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+
+        $(".SearchBtn").click(ExecuteSearch);
 
         ExecuteSearch();
     }

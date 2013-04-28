@@ -54,13 +54,14 @@
 
 .HeaderText {
     font-family: 'Quicksand',Verdana;
-    font-size: 20px;
+    font-size: 14px;
     color: white;
     width: 75%;
 }
 
 .CitySearch {
     font-family: 'Quicksand',Verdana;
+   
     width: 550px;
 }
 
