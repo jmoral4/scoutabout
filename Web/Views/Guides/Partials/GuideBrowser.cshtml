@@ -4,9 +4,13 @@
     ViewBag.Title = "GuideBrowser";    
 }
 
+<ul class="thumbnails">
 @foreach( var item in Model)
 {
-    <div style="width:220px" class="well">
-        @Html.Partial("Partials/GuideThumbnails", item)      
+  <li class="span4">
+    <div  style="width:220px" class="thumbnail well">
+           @Html.Partial("Partials/GuideThumbnails", item) 
     </div>
+  </li>    
 }
+</ul>
