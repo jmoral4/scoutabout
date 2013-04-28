@@ -309,8 +309,11 @@
     <Content Include="Images\GuideImages\Kid-Day-in-the-City-Guide.jpg" />
     <Content Include="Images\GuideImages\Musical-Momentos-Guide.jpg" />
     <Content Include="Images\HeroImages\beachmasthead.jpg" />
+    <Content Include="Images\HeroImages\beachmasthead_940.jpg" />
     <Content Include="Images\HeroImages\carouselmasthead.jpg" />
+    <Content Include="Images\HeroImages\carouselmasthead_940.jpg" />
     <Content Include="Images\HeroImages\vegimasthead.jpg" />
+    <Content Include="Images\HeroImages\vegimasthead_940.jpg" />
     <Content Include="Images\Portland.png" />
     <Content Include="Images\Sanfran.png" />
     <Content Include="Scripts\bootstrap.js" />

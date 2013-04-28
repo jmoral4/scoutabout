@@ -33,10 +33,10 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.SearchBtn').click(function () {
-            var params = { CitySearch: $(".CitySearch").val() };
+        $('.CitySearch').blur(function () {
+            var params = { CitySearch: $(this).val() };
             $.ajax({
-                url: "../Location/SearchCities",
+                url: "Location/SearchCities",
                 type: "get",
                 data: params,
                 success: function (response, textStatus, jqXHR) {
