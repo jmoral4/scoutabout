@@ -356,11 +356,13 @@
     <Content Include="Images\Team\ERIKu.jpg" />
     <Content Include="Images\Team\Gabe.jpg" />
     <Content Include="Images\Team\GAUTHIERu.jpg" />
+    <Content Include="Images\Team\GAUTHIERu2.jpg" />
     <Content Include="Images\Team\Gautier.jpg" />
     <Content Include="Images\Team\John.jpg" />
     <Content Include="Images\Team\JOHNu.jpg" />
     <Content Include="Images\Team\Roland.jpg" />
     <Content Include="Images\Team\ROLANDu.jpg" />
+    <Content Include="Images\Team\ROLANDu2.jpg" />
     <Content Include="Images\Team\Ryan.jpg" />
     <Content Include="Images\Team\True.jpg" />
     <Content Include="Images\twitter.png" />
