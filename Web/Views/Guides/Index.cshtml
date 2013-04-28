@@ -22,13 +22,16 @@
             Summary
         </th>
         <th>
+            ImageUrl
+        </th>
+        <th>
             Likes
         </th>
         <th>
             Follow
         </th>
         <th>
-            Shares
+            Views
         </th>
         <th>
             Author
@@ -52,13 +55,16 @@
 			@item.Summary
         </td>
         <td>
+			@item.ImageUrl
+        </td>
+        <td>
 			@item.Likes
         </td>
         <td>
 			@item.Follow
         </td>
         <td>
-			@item.Shares
+			@item.Views
         </td>
         <td>
 			@(item.Author == null ? "None" : item.Author.Name)

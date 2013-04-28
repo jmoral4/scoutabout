@@ -197,7 +197,6 @@
     <Compile Include="Models\Interest.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Location.cs" />
-    <Compile Include="Models\ScoutAboutWebContext.cs" />
     <Compile Include="Models\Tag.cs" />
     <Compile Include="Models\TypeOfDay.cs" />
     <Compile Include="Models\User.cs" />
@@ -298,7 +297,9 @@
     <Content Include="Scripts\knockout-2.2.1.debug.js" />
     <Content Include="Scripts\knockout-2.2.1.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -397,7 +398,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Home\Partials\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
