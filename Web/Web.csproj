@@ -383,6 +383,7 @@
     </Content>
     <Content Include="Views\Shared\_validationSummary.cshtml" />
     <Content Include="Views\Home\Partials\CitiesParital.cshtml" />
+    <Content Include="Views\Guides\Description.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
