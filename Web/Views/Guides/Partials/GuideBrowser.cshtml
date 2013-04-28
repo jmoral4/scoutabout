@@ -1,14 +1,45 @@
 ﻿@model IEnumerable<Web.Models.Guide>
 
 @{
-    ViewBag.Title = "GuideBrowser";    
+    ViewBag.Title = "GuideBrowser";
+    List<Web.Models.Guide> MockModels = new List<Web.Models.Guide>();
+    List<string> guideUrls = new List<string>() { "Continental-Christmas-Guide.jpg", "Cruisin-on-the-sound.jpg", "Kid-Day-in-the-City-Guide.jpg", "Musical-Momentos-Guide.jpg" };
+    
+    var ctx = new Web.Models.WebContext();
+    Web.Models.User author = ctx.Users.Where( x => x.UserId == 1).First();
+    Random r = new Random();
+
+    foreach (var item in Model)
+    {
+        MockModels.Add(item);
+    }
+    
+    while(MockModels.Count < 20)
+    {
+        Web.Models.Guide g = new Web.Models.Guide();
+        g.ImageUrl = guideUrls[r.Next(0,4)];
+        g.Author = author;
+        g.Follow = r.Next(1, 1000);
+        g.Views = r.Next(1, 10000);
+        g.Likes = r.Next(1, 10000);
+        g.Title = g.ImageUrl.Replace(".jpg", "");
+        g.Summary = "something cool";
+        g.GuideId = Model.First().GuideId;
+        MockModels.Add(g);
+        
+        //foreach (var item in Model)
+        //{
+        //    MockModels.Add(item);
+        //}
+    }
+      
 }
 
 <ul class="thumbnails">
-@foreach( var item in Model)
+@foreach( var item in MockModels)
 {
-  <li class="span4">
-    <div  style="width:220px" class="thumbnail well">
+  <li class="span3">
+    <div  style="width:210px" class="well">
            @Html.Partial("Partials/GuideThumbnails", item) 
     </div>
   </li>    
