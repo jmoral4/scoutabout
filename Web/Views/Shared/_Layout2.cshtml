@@ -10,6 +10,7 @@
   @RenderSection("head", required: false)
   @* favicons and touch icons go here *@
   @Scripts.Render("~/bundles/modernizr")
+  @Scripts.Render("~/bundles/jquery")
 </head>
 <body>
   <div class="navbar navbar-inverse navbar-fixed-top">
@@ -40,7 +41,6 @@
       <p>&copy; North Technologies, LLC @System.DateTime.Now.ToString("yyyy")</p>
     </footer>
   </div>
-  @Scripts.Render("~/bundles/jquery")
   @Scripts.Render("~/bundles/bootstrap")
   @RenderSection("Scripts", required: false)
 </body>
