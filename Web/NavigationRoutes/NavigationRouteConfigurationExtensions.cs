@@ -139,10 +139,10 @@ namespace NavigationRoutes
                 {
                     return "";
                 }
-                else
-                {
-                    return actionName.ToLower();
-                }
+                //else
+                //{
+                //    return actionName.ToLower();
+                //}
             }
 
             return controllerName.ToLower() + "/" + actionName.ToLower();
