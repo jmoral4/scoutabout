@@ -1,10 +1,8 @@
-﻿@model Web.Models.Guide
+﻿@using Web.Utilities
+@model Web.Models.Guide
 
 @{
     ViewBag.Title = "GuideThumbnailPartial";
 }
-@*@Html.ActionLink("something","Description", "Guides",new { id = Model.GuideId }, new { Class = "thumbnail" } ) *@
+@Html.ImageActionLink(Url.Content("~/Images/GuideImages/" + Model.ImageUrl), "[alt]", "Description", "Guides", new { id = Model.GuideId }, new { Class = "thumbnail" }, new { Class = "img-polaroid" , height=200, width=200 })
 
-   <a href="[]" class="thumbnail" title=" ">       
-    <img id="primary" src="~/Images/GuideImages/@Model.ImageUrl" height="200" width="200" alt="" class="img-polaroid" />
-   </a>
