@@ -10,6 +10,11 @@
    float:left;
 }
 
+.common-font
+{
+      font-family:'Quicksand',Verdana;
+}
+
 .smallHeader
 {
      font-family:'Quicksand',Verdana;
@@ -50,6 +55,11 @@
          cursor:pointer;
 
     }
+.longFormImage
+{
+    height:128px;
+    width:128px;
+}
     .HeaderText
     {
      font-family:'Quicksand',Verdana;
@@ -61,6 +71,6 @@
     .CitySearch
     {
        font-family:'Quicksand',Verdana;
-       width:500px;
+       width:800px;
       
     }
