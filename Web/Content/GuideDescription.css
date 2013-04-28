@@ -29,9 +29,13 @@
     padding: 1em 3em;
 }
 
+    .timeline-item-details img {
+        
+    }
+
 .timeline-items > div:hover .timeline-item-details {
     background-color: #EBEBEB;
-    color:black;
+    color: black;
     display: block;
     position: absolute;
     margin-left: 2em;
@@ -50,15 +54,15 @@
 
 .social-list {
     list-style-type: none;
+    margin-top: 20px !important;
 }
 
 * {
     font-family: 'Quicksand', Arial, sans-serif;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-h1,h2,h3,p,li,span {
-
+h1, h2, h3, p, li, span {
     color: white;
 }
 
@@ -79,12 +83,12 @@ h1,h2,h3,p,li,span {
 
 .page-description {
     margin: 20px 0;
-    display:block;
+    display: block;
 }
 
 .border-row .span12 {
     border-top: 1px solid white;
-    margin-bottom:2em;
+    margin-bottom: 2em;
 }
 
 .guide-thumbnail {
@@ -93,10 +97,11 @@ h1,h2,h3,p,li,span {
 
     .guide-thumbnail img {
         width: 25%;
-        margin:0;
-        padding:0;
-        display:inline-block;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
     }
-.guide-thumbnail img:first-child {
-    width: 100%;
-}
+
+        .guide-thumbnail img:first-child {
+            width: 100%;
+        }
