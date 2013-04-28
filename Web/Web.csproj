@@ -279,6 +279,7 @@
     <None Include="Properties\PublishProfiles\Scoutabout - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\Scoutabout - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\300x200.png" />
     <Content Include="Images\ActivityImages\bainbridgeferry.jpg" />
     <Content Include="Images\ActivityImages\BathtubGin9254.jpg" />
     <Content Include="Images\ActivityImages\CafeFlora_KellyO.jpg" />
