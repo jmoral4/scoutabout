@@ -5,8 +5,8 @@
 <head>
   <meta charset="utf-8">
   <title>@ViewBag.Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand">
   @Styles.Render("~/Content/bootstrap")
   @Styles.Render("~/Content/scoutabout")
   @RenderSection("head", required: false)
@@ -23,9 +23,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-          <div class="brand common-font">
-        <a style="text-decoration:none;" href="/" title="Scout About"><div style="font-size:25px"><span style="color:#ff7321">scout</span><span style="color:#9f9f9f">ab</span><span style="color:#ff7321">o</span><span><span style="color:#9f9f9f">ut</span></span></div></a>
-          </div>
+        <div class="brand common-font">
+          <a style="text-decoration: none;" href="/" title="Scout About">
+            <div style="font-size: 25px"><span style="color: #ff7321">scout</span><span style="color: #9f9f9f">ab</span><span style="color: #ff7321">o</span><span><span style="color: #9f9f9f">ut</span></span></div>
+          </a>
+        </div>
         <div class="nav-collapse collapse">
           <ul class="nav">
             @Html.Navigation()
@@ -34,27 +36,28 @@
       </div>
     </div>
   </div>
-    <div style="width:80%;margin:auto;background-color:#9f9f9f"  >
-         <div  class="container">
-    @Html.Partial("_alerts")
-    @Html.Partial("_validationSummary")
+  <div style="width: 80%; margin: auto; background-color: #9f9f9f">
+    <div class="container">
+      @Html.Partial("_alerts")
+      @Html.Partial("_validationSummary")
 
-    @RenderBody()
-    <hr style="padding-left:20px;padding-right:20px">
-    <footer>
-        <div style="float:right;margin:5px" >
+      @RenderBody()
+      <hr style="padding-left: 20px; padding-right: 20px">
+      <footer>
+        <div style="float: right; margin: 5px">
+          <div><a href="http://instagram.com/scoutaboutusa?ref=badge" target="_blank" class="ig-b- ig-b-v-24">
+            <img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a></div>
           <div><a href="https://twitter.com/ScoutaboutUSA" class="twitter-follow-button" data-show-count="false"></a></div>
           <div class="fb-follow" data-href="https://www.facebook.com/ScoutaboutUSA" data-layout="button_count" data-show-faces="false" data-width="450"></div>
-
         </div>
         <center>
           <p class="textLabel">&copy; North Technologies, LLC @System.DateTime.Now.ToString("yyyy")</p>
         </center>
-    </footer>
-  </div>
+      </footer>
     </div>
+  </div>
   @Scripts.Render("~/bundles/bootstrap")
-<div id="fb-root"></div>
+  <div id="fb-root"></div>
   <script type="text/javascript">
     (function (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
