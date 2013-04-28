@@ -330,6 +330,7 @@
     <Content Include="Images\Mobile\ss1.png" />
     <Content Include="Images\Mobile\ss2.png" />
     <Content Include="Images\Mobile\ss3.png" />
+    <Content Include="Images\natty-boh.png" />
     <Content Include="Images\Portland.png" />
     <Content Include="Images\Sanfran.png" />
     <Content Include="Images\Team\Anna.jpg" />
