@@ -1,6 +1,7 @@
 ﻿
 .sortContext
 {
+    width:80px;
     background-color:#9f9f9f;
     
 }
@@ -71,6 +72,6 @@
     .CitySearch
     {
        font-family:'Quicksand',Verdana;
-       width:750px;
+       width:550px;
       
     }
