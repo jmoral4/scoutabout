@@ -18,7 +18,7 @@ namespace Web.Controllers
 
         public ViewResult Index()
         {
-            return View(context.Guides.Include(guide => guide.Activities).ToList());
+            return View(context.Guides.Include(guide => guide.Activities).Include(guide => guide.Author).ToList());
         }
 
         //
@@ -35,6 +35,7 @@ namespace Web.Controllers
 
         public ActionResult Create()
         {
+            ViewBag.PossibleAuthors = context.Users;
             return View();
         } 
 
@@ -51,6 +52,7 @@ namespace Web.Controllers
                 return RedirectToAction("Index");  
             }
 
+            ViewBag.PossibleAuthors = context.Users;
             return View(guide);
         }
         
@@ -60,6 +62,7 @@ namespace Web.Controllers
         public ActionResult Edit(int id)
         {
             Guide guide = context.Guides.Single(x => x.GuideId == id);
+            ViewBag.PossibleAuthors = context.Users;
             return View(guide);
         }
 
@@ -75,6 +78,7 @@ namespace Web.Controllers
                 context.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.PossibleAuthors = context.Users;
             return View(guide);
         }
 

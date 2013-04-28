@@ -18,8 +18,17 @@
     <div class="display-label">Summary</div>
     <div class="display-field">@Model.Summary</div>
 
+    <div class="display-label">Likes</div>
+    <div class="display-field">@Model.Likes</div>
+
+    <div class="display-label">Follow</div>
+    <div class="display-field">@Model.Follow</div>
+
+    <div class="display-label">Shares</div>
+    <div class="display-field">@Model.Shares</div>
+
     <div class="display-label">Author</div>
-    <div class="display-field">@Model.Author</div>
+    <div class="display-field">@(Model.Author == null ? "None" : Model.Author.Name)</div>
 </fieldset>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.GuideId }) |

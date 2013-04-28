@@ -19,10 +19,37 @@
 </div>
 
 <div class="editor-label">
-    @Html.LabelFor(model => model.Author)
+    @Html.LabelFor(model => model.Likes)
 </div>
 <div class="editor-field">
-    @Html.EditorFor(model => model.Author)
-    @Html.ValidationMessageFor(model => model.Author)
+    @Html.EditorFor(model => model.Likes)
+    @Html.ValidationMessageFor(model => model.Likes)
 </div>
 
+<div class="editor-label">
+    @Html.LabelFor(model => model.Follow)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Follow)
+    @Html.ValidationMessageFor(model => model.Follow)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Shares)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Shares)
+    @Html.ValidationMessageFor(model => model.Shares)
+</div>
+
+<div class="editor-label">
+    Author
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.AuthorId, ((IEnumerable<Web.Models.User>)ViewBag.PossibleAuthors).Select(option => new SelectListItem {
+        Text = (option == null ? "None" : option.Name), 
+        Value = option.UserId.ToString(),
+        Selected = (Model != null) && (option.UserId == Model.AuthorId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.AuthorId)
+</div>
