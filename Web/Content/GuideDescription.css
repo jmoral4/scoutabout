@@ -21,6 +21,7 @@
     width: 300px;
     top: 0;
     left: 80px;
+    color:white;
 }
 
 .timeline-item-details {
@@ -97,14 +98,14 @@ h1, h2, h3, p, li, span {
 }
 
     .guide-thumbnail img {
-        width: 25%;
+        width: 23%;
         margin: 0;
         padding: 0;
         display: inline-block;
     }
 
         .guide-thumbnail img:first-child {
-            width: 100%;
+            width: 96%;
         }
 
 .share-icons img {
