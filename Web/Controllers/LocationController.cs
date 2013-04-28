@@ -23,7 +23,7 @@ namespace Web.Controllers
             locations.Add(new Models.Location() { City = "Portland", Image = Url.Content(@"..\Images\Portland.png"), State = "OR", Summary = "Home of the Golden Gate bridge and south of the Red Wood Forest. Oldest Chinatown in the US, classic city parks and fresh made sourdough bread.", Zipcode = "96789" });
             locations.Add(new Models.Location() { City = "Chicago", Image = Url.Content(@"..\Images\Chicago.png"), State = "IL", Summary = "Home of the Golden Gate bridge and south of the Red Wood Forest. Oldest Chinatown in the US, classic city parks and fresh made sourdough bread.", Zipcode = "96789" });
 
-            var results = locations.Where(x => x.City.Contains(CitySearch));
+            var results = locations.Where(x => x.City.ToUpperInvariant().Contains(CitySearch.ToUpperInvariant()));
 
            return PartialView("Partials/LocationPartial", results);
         }

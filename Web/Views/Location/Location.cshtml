@@ -44,7 +44,7 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.CitySearch').blur(function () {
+        $('.SearchBtn').click(function () {
             var params = { CitySearch: $(".CitySearch").val() };
             $.ajax({
                 url: "../Location/SearchCities",
