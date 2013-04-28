@@ -78,18 +78,14 @@
         $('.CitySearch').blur(function () {
             var params = { userName: $(this).val() };
             $.ajax({
-                url: "Home/SearchUser",
+                url: "Location/SearchCities",
                 type: "get",
                 data: { userName: $(".CitySearch").val() },
                 success: function (response, textStatus, jqXHR) {
-                    if (response.IsExisting) {
-                        // User name is existing already, you can display a message to the user
-                        $("#regTitle").html("Already Exists")
-                    }
-                    else {
+                   
                         // User name is not existing
-                        $("#regTitle").html("Available")
-                    }
+                        $(".CityContext").html(response)
+                    
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     alert("error");
