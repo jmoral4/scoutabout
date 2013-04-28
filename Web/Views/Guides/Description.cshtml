@@ -71,7 +71,7 @@
                                     <td>City:</td>
                                     <td>@activity.City, @activity.State</td>
                                 </tr>
-                                @if (activity.Cost.HasValue)
+                                @if (!activity.Cost.HasValue)
                                 {
                                     // Do Nothing
                                 }
