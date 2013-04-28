@@ -26,5 +26,43 @@ namespace Web.Models
         public virtual ICollection<Item> Items { get; set; }
 
         public virtual ICollection<Tag> Tags { get; set; }
+
+        public int Hour
+        {
+            get
+            {
+                if (StartTime.HasValue)
+                {
+                    return StartTime.Value.Hour;
+                }
+                else
+                {
+                    return -9999;
+                }
+            }
+        }
+
+        public int Height
+        {
+            get
+            {
+                return (DurationInHours * 40);
+            }
+        }
+
+        public int DurationInHours
+        {
+            get
+            {
+                if (Duration.HasValue)
+                {
+                    return (int)Math.Ceiling(Duration.Value.TotalHours);
+                }
+                else
+                {
+                    return 1;
+                }
+            }
+        }
     }
 }
