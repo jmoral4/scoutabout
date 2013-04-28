@@ -6,7 +6,9 @@
     List<string> guideUrls = new List<string>() { "Continental-Christmas-Guide.jpg", "Cruisin-on-the-sound.jpg", "Kid-Day-in-the-City-Guide.jpg", "Musical-Momentos-Guide.jpg" };
     
     var ctx = new Web.Models.WebContext();
-    Web.Models.User author = ctx.Users.Where( x => x.UserId == 1).First();
+
+    List<Web.Models.User> authors = ctx.Users.ToList();
+        
     Random r = new Random();
 
     foreach (var item in Model)
@@ -18,7 +20,7 @@
     {
         Web.Models.Guide g = new Web.Models.Guide();
         g.ImageUrl = guideUrls[r.Next(0,3)];
-        g.Author = author;
+        g.Author = authors[r.Next(0,authors.Count)];
         g.Follow = 1;
         g.Views = r.Next(1, 10000);
         g.Likes = r.Next(1, 10000);
