@@ -344,7 +344,6 @@
     <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\Users\_CreateOrEdit.cshtml" />
     <Content Include="Views\Shared\_Layout2.cshtml" />
-    <Content Include="Views\Home\_ViewStart.cshtml" />
     <Content Include="Views\Guides\Create.cshtml" />
     <Content Include="Views\Guides\Edit.cshtml" />
     <Content Include="Views\Guides\Delete.cshtml" />
@@ -390,6 +389,11 @@
     <Content Include="Views\Location\Partials\LocationDetailPartial.cshtml" />
     <Content Include="Views\Location\Partials\LocationPartial.cshtml" />
     <Content Include="Views\Location\Location.cshtml" />
+    <Content Include="Views\Guides\Partials\GuideBrowser.cshtml" />
+    <Content Include="Views\Guides\Partials\GuideThumbnailDetails.cshtml" />
+    <Content Include="Views\Guides\Partials\GuideThumbnailPartial.cshtml" />
+    <Content Include="Views\Guides\Partials\GuideThumbnails.cshtml" />
+    <Content Include="Views\Account\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
