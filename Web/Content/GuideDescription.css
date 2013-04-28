@@ -1,3 +1,24 @@
 ﻿ul.timeline {
     list-style-type:none;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
 }
+    ul.timeline li {
+        height: 40px;
+        padding-left: 0.5em;
+        border-bottom: 1px solid gray;
+    }
+
+.timeline-wrapper {
+    position:relative;
+}
+
+.timeline-items > div {
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 0 2px;
+    position:absolute;
+    width: 300px;
+    top:0;
+    left:70px;
+}
+
