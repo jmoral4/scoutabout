@@ -292,7 +292,7 @@
     <Content Include="Images\ActivityImages\BathtubGin9254.jpg" />
     <Content Include="Images\ActivityImages\BoldVentures.jpg" />
     <Content Include="Images\ActivityImages\CafeFlora_KellyO.jpg" />
-    <Content Include="Images\ActivityImages\CPUasage.jpg" />
+    <Content Include="Images\ActivityImages\CPUsage.jpg" />
     <Content Include="Images\ActivityImages\dahlialounge.jpg" />
     <Content Include="Images\ActivityImages\dragonboat.jpg" />
     <Content Include="Images\ActivityImages\Fresh_Bistro_01.jpg" />
@@ -320,9 +320,11 @@
     <Content Include="Images\ActivityImages\wayward-vegan-cafe.jpg" />
     <Content Include="Images\Chicago.png" />
     <Content Include="Images\cities_masthead.jpg" />
+    <Content Include="Images\facebook.png" />
     <Content Include="Images\GuideImages\3.png" />
     <Content Include="Images\GuideImages\4.PNG" />
     <Content Include="Images\GuideImages\5.PNG" />
+    <Content Include="Images\GuideImages\8.png" />
     <Content Include="Images\GuideImages\Continental-Christmas-Guide.jpg" />
     <Content Include="Images\GuideImages\Cruisin-on-the-sound.jpg" />
     <Content Include="Images\GuideImages\Kid-Day-in-the-City-Guide.jpg" />
@@ -359,6 +361,7 @@
     <Content Include="Images\Team\ROLANDu.jpg" />
     <Content Include="Images\Team\Ryan.jpg" />
     <Content Include="Images\Team\True.jpg" />
+    <Content Include="Images\twitter.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
