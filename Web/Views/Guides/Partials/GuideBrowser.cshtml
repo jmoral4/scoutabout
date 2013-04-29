@@ -11,7 +11,7 @@
         
     Random r = new Random();
 
-    foreach (var item in Model)
+    foreach (var item in Model.OrderByDescending(x=>x.GuideId))
     {
         MockModels.Add(item);
     }
